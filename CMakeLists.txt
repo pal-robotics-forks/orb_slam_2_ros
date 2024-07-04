@@ -153,7 +153,7 @@ add_executable (${PROJECT_NAME}_mono
   ros/src/MonoNode.cc
   ros/src/Node.cc
 )
-add_dependencies (${PROJECT_NAME}_mono ${PROJECT_NAME} ${PROJECT_NAME}_gencfg)
+add_dependencies (${PROJECT_NAME}_mono ${PROJECT_NAME} ${PROJECT_NAME}_gencfg ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
 target_link_libraries(${PROJECT_NAME}_mono ${LIBS_ROS})
 
@@ -161,7 +161,7 @@ add_executable (${PROJECT_NAME}_stereo
   ros/src/StereoNode.cc
   ros/src/Node.cc
 )
-add_dependencies (${PROJECT_NAME}_stereo ${PROJECT_NAME} ${PROJECT_NAME}_gencfg)
+add_dependencies (${PROJECT_NAME}_stereo ${PROJECT_NAME} ${PROJECT_NAME}_gencfg ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
 target_link_libraries(${PROJECT_NAME}_stereo ${LIBS_ROS})
 
@@ -169,7 +169,7 @@ add_executable (${PROJECT_NAME}_rgbd
   ros/src/RGBDNode.cc
   ros/src/Node.cc
 )
-add_dependencies (${PROJECT_NAME}_rgbd ${PROJECT_NAME} ${PROJECT_NAME}_gencfg)
+add_dependencies (${PROJECT_NAME}_rgbd ${PROJECT_NAME} ${PROJECT_NAME}_gencfg ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
 target_link_libraries(${PROJECT_NAME}_rgbd ${LIBS_ROS})
 
