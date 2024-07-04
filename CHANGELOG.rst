@@ -2,8 +2,8 @@
 Changelog for package orb_slam2_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.2 (2024-07-04)
+------------------
 * Wait for exported targets before building nodes
 * Contributors: Mathias Lüdtke
 
